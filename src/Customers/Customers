@@ -1,0 +1,93 @@
+public class Customers{
+
+    private int id;
+    private string firstname;
+    private string lastname;
+    private string mailadress;
+
+    public Customers(int id, string firstname, string lastname, string mailadress) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.mailadress = mailadress;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public string getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(string firstname) {
+        this.firstname = firstname;
+    }
+
+    public string getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(string lastname) {
+        this.lastname = lastname;
+    }
+
+    public string getMailadress() {
+        return mailadress;
+    }
+
+    public void setMailadress(string mailadress) {
+        this.mailadress = mailadress;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Customers{" +
+                "firstname=" + firstname +
+                ", lastname=" + lastname +
+                ", mailadress=" + mailadress +
+                '}';
+    }
+
+    class CustomerMethods{
+
+        public static void main(String[] args) {
+
+            Collection<Customers> c = new ArrayList<Customers>();
+            Scanner s = new Scanner(System.in);
+            int ch;
+            do{
+                System.out.println("1.Insert");
+                System.out.println("1.Display");
+                System.out.println("1.Search");
+                System.out.println("1.Delete");
+                System.out.println("1.Update");
+                System.out.println("Enter your choice: ");
+                ch= s.nextInt();
+
+                switch (ch){
+                    case 1:
+                        System.out.println("Enter id: ");
+                        int id = s.nextInt();
+                        System.out.println("Enter firstname: ");
+                        String firstname = s.nextLine();
+                        System.out.println("Enter lastname: ");
+                        String lastname = s.nextLine();
+                        System.out.println("Enter mailadress: ");
+                        String mailadress = s.nextLine();
+
+                        c.add(new Customers(id, firstname, lastname, mailadress))
+                        break;
+                    case 2:
+                        System.out.println(c);
+                        break;
+                }
+
+            }while(ch!=0);
+        }
+    }
+}
