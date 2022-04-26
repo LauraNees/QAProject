@@ -60,6 +60,12 @@ public class Customers{
         public static void main(String[] args) {
 
             List<Customers> c = new ArrayList<Customers>();
+
+            c.add(new Customers(1, "Laura", "Nees", "lauranees@hotmail.com"));
+            c.add(new Customers(2, "Jan", "Nees", "Jannees@hotmail.com"));
+            c.add(new Customers(3, "Nadine", "Kees", "Nadinekees@hotmail.com"));
+            c.add(new Customers(4, "Nadine", "Kees", "Nadinekees@hotmail.com"));
+
             Scanner s = new Scanner(System.in);
             Scanner s1 = new Scanner(System.in);
             int ch;

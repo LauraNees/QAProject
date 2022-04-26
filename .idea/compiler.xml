@@ -9,5 +9,8 @@
         <module name="QAProjectCMA" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="QAProjectCMA" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
