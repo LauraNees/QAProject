@@ -8,6 +8,18 @@
     <artifactId>QAProjectCMA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!--add here the necesairy dependencies. For example mysql just Google
         dependencies Maven mysql and choose the correct version and download it -->
@@ -18,9 +30,23 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>3.8.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>
+
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
