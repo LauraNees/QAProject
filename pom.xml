@@ -8,9 +8,25 @@
     <artifactId>QAProjectCMA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!--add here the necesairy dependencies. For example mysql just Google
+        dependencies Maven mysql and choose the correct version and download it -->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
+
 
 </project>
